@@ -1,0 +1,15 @@
+.tabContainer {
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tabListContainer {
+  border-top-width: 0.5px;
+  flex-direction: row;
+}
+
+.tabTitle {
+  font-size: 12px;
+}
