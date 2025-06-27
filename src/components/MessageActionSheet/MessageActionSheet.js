@@ -45,15 +45,6 @@ export const MessageActionSheet = React.forwardRef((props, fRef) => {
     handler?.(...args);
   };
 
-  const goToShareMessageScreen = () => {
-    navigation.navigate('Modals', {
-      params: {
-        message,
-      },
-      screen: 'ShareMessageScreen',
-    });
-  };
-
   const options = useMemo(() => {
     if (!actionHandlersExist) {
       return [];
@@ -100,12 +91,6 @@ export const MessageActionSheet = React.forwardRef((props, fRef) => {
         title: 'Reply in Thread',
       });
 
-      options.push({
-        Icon: CurveLineLeftUp,
-        handler: callHandlerAndDismissSheet.bind(null, goToShareMessageScreen),
-        id: 'reply',
-        title: 'Share Message',
-      });
       options.push({
         Icon: Mute,
         handler: callHandlerAndDismissSheet.bind(null),

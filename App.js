@@ -31,7 +31,6 @@ import { MentionsScreen } from './src/screens/MentionsScreen/MentionsScreen';
 import { MessageSearchScreen } from './src/screens/MessageSearchScreen/MessageSearchScreen';
 import { NewMessageScreen } from './src/screens/NewMessageScreen/NewMessageScreen';
 import { ProfileScreen } from './src/screens/ProfileScreen';
-import { ShareMessageScreen } from './src/screens/ShareMessageScreen/ShareMessageScreen';
 import { ThreadScreen } from './src/screens/ThreadScreen';
 import { SimpleLoginScreen } from './src/screens/SimpleLoginScreen';
 import { HEADER_HEIGHT } from './src/utils';
@@ -195,11 +194,6 @@ const ModalStackNavigator = () => (
     <ModalStack.Screen
       component={NewMessageScreen}
       name='NewMessageScreen'
-      options={{ headerShown: false }}
-    />
-    <ModalStack.Screen
-      component={ShareMessageScreen}
-      name='ShareMessageScreen'
       options={{ headerShown: false }}
     />
   </ModalStack.Navigator>
