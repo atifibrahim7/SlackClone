@@ -112,65 +112,7 @@ export const ProfileScreen = () => {
             style={{
               marginTop: 30,
             }}>
-            {/* Commented out unimplemented list items */}
-            {/* <View
-              style={[
-                styles.actionItemSection,
-                {
-                  borderTopColor: colors.border,
-                  borderTopWidth: 0.5,
-                },
-              ]}>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'dnd'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>{'Do not disturb'}</SCText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'away'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>
-                  {'Set yourself away'}
-                </SCText>
-              </TouchableOpacity>
-            </View>
-            <View
-              style={[
-                styles.actionItemSection,
-                {
-                  borderTopColor: colors.border,
-                  borderTopWidth: 0.5,
-                },
-              ]}>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'notifications'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>{'Notifications'}</SCText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'preferences'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>{'Preferences'}</SCText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'saved-items'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>{'Saved items'}</SCText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={notImplemented}
-                style={styles.actionItemContainer}>
-                <SVGIcon height='23' type={'view-profile'} width='23' />
-                <SCText style={{ paddingLeft: 20 }}>{'View profile'}</SCText>
-              </TouchableOpacity>
-            </View> */}
-
-            {/* Add Logout Button */}
+           
             <View
               style={[
                 styles.actionItemSection,

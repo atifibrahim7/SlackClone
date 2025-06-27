@@ -1,5 +1,5 @@
 // Simple authentication service for React Native app
-const API_BASE_URL = 'https://clean-things-enjoy.loca.lt'; // Update with your tunnel URL
+const API_BASE_URL = 'https://rotten-wombats-nail.loca.lt'; // Update with your tunnel URL
 
 class SimpleAuthService {
   // Simple login - creates user if doesn't exist
@@ -40,4 +40,3 @@ class SimpleAuthService {
 }
 
 export default new SimpleAuthService();
-

@@ -34,7 +34,6 @@ import { NewMessageScreen } from './src/screens/NewMessageScreen/NewMessageScree
 import { ProfileScreen } from './src/screens/ProfileScreen';
 import { ShareMessageScreen } from './src/screens/ShareMessageScreen/ShareMessageScreen';
 import { ThreadScreen } from './src/screens/ThreadScreen';
-import { UserPickerModal } from './src/screens/UserPickerModal/UserPickerModal';
 import { SimpleLoginScreen } from './src/screens/SimpleLoginScreen';
 import { HEADER_HEIGHT } from './src/utils';
 import { ChatClientStore } from './src/utils/ChatClientStore';
@@ -55,10 +54,6 @@ export default () => {
   const [activeChannel, setActiveChannel] = useState(null);
   // For actionsheets
   const [activeMessage, setActiveMessage] = useState(null);
-  const [userPickerVisible, setUserPickerVisible] = useState(false);
-
-  const openUserPicker = () => setUserPickerVisible(true);
-  const closeUserPicker = () => setUserPickerVisible(false);
 
   // Check for existing authentication on app start
   useEffect(() => {
@@ -170,32 +165,15 @@ export default () => {
             value={{
               activeChannel,
               activeMessage,
-              openUserPicker,
               setActiveChannel,
               setActiveMessage,
               logout: handleLogout, // Add logout function
               switchUser: (userId) => {
-                /**
-                 * Dev token generations will only work in case of development mode.
-                 * So please make sure you have auth check disabled, if you are planning to
-                 * check user picker feature.
-                 */
-                const chatClient = ChatClientStore.client;
-                const token = chatClient.devToken(userId);
-                setCurrentUser({
-                  id: userId,
-                  token,
-                });
-                setUserPickerVisible(false);
+                // Simplified user switching - just log current user out
+                handleLogout();
               },
             }}>
             <RootNavigation />
-            <UserPickerModal
-              label={'name'}
-              modalVisible={userPickerVisible}
-              onRequestClose={closeUserPicker}
-              onValueChange={closeUserPicker}
-            />
           </SlackAppContext.Provider>
         </View>
       </NavigationContainer>

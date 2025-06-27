@@ -32,8 +32,6 @@ export const ScreenHeader = ({ showLogo = false, title }) => {
   const insets = useSafeAreaInsets();
   const { colors } = useTheme();
 
-  const { openUserPicker } = useContext(SlackAppContext);
-
   return (
     <>
       <View
@@ -45,16 +43,6 @@ export const ScreenHeader = ({ showLogo = false, title }) => {
             paddingTop: insets.top,
           },
         ]}>
-        {showLogo && (
-          <TouchableOpacity onPress={openUserPicker}>
-            <Image
-              source={{
-                uri: 'https://avatars.githubusercontent.com/u/8597527?s=200&v=4',
-              }}
-              style={styles.logo}
-            />
-          </TouchableOpacity>
-        )}
         <SCText
           style={[
             styles.title,
