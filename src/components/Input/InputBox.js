@@ -145,7 +145,6 @@ export const InputBox = () => {
             <TouchableOpacity onPress={openMentionsPicker}>
               <SVGIcon height='18' type={'input-buttons-mentions'} width='18' />
             </TouchableOpacity>
-            {/* Text editor is not functional yet. We will cover it in some future tutorials */}
             <TouchableOpacity onPress={notImplemented}>
               <SVGIcon
                 height='18'

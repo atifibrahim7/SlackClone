@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
 
 const chatClient = ChatClientStore.client;
 
-/** @todo: Cleanup styling */
 export const ProfileScreen = () => {
   const { colors } = useTheme();
   const { logout } = useContext(SlackAppContext);
@@ -112,7 +111,6 @@ export const ProfileScreen = () => {
             style={{
               marginTop: 30,
             }}>
-           
             <View
               style={[
                 styles.actionItemSection,

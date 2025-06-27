@@ -32,14 +32,6 @@ export const MessageText = React.memo((props) => {
               color: colors.dimmedText,
             }}>
             replied to a thread{' '}
-            {/* <SCText
-              style={{
-                color: colors.linkText,
-              }}>
-              {message.parentMessageText
-                ? truncate(message.parentMessageText, 70, '...')
-                : ''}
-            </SCText> */}
           </SCText>
         </TouchableOpacity>
       )}

@@ -176,9 +176,7 @@ export const ChannelScreen = () => {
 
     try {
       if (messageListRef.current) {
-        /**
-         * Since the flatlist is inverted, we need to calculate the index from most recent message
-         */
+      
         messageListRef.current.scrollToIndex({
           index: messages.length - indexOfParentInMessageList - 1,
           viewPosition: 0.5,

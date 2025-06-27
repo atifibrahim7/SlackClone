@@ -60,9 +60,6 @@ export const NewMessageScreen = () => {
 
   const additionalTextInputProps = useMemo(
     () => ({
-      /**
-       * When message input is focused, switch to channel with selected members.
-       */
       onFocus: async () => {
         setFocusOnSearch(false);
         const newChannel = await getChannelUsingMembers(chatClient, [
@@ -78,13 +75,6 @@ export const NewMessageScreen = () => {
     [channel],
   );
 
-  /**
-   * As soon as we send a message, navigate to ChannelScreen.
-   *
-   * @param {*} channelId
-   * @param {*} message
-   * @returns
-   */
   const sendMessageAndNavigateToChannel = async (channelId, message) => {
     const res = await channel.sendMessage(message);
     navigation.navigate('ChannelScreen', {
@@ -93,10 +83,7 @@ export const NewMessageScreen = () => {
     return res;
   };
 
-  /**
-   * Keep track of selected users, when user is remove or added to selected users.
-   * @param {*} updatedUsers
-   */
+ 
   const onUsersChange = (updatedUsers) => {
     selectedUsers.current = updatedUsers;
   };

@@ -253,7 +253,7 @@ export const InputBoxThread = () => {
                       width='18'
                     />
                   </TouchableOpacity>
-                  {/* Text editor is not functional yet. We will cover it in some future tutorials */}
+                 
                   <TouchableOpacity
                     onPress={notImplemented}
                     style={styles.actionButton}>

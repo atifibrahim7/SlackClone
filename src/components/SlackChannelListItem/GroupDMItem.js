@@ -47,7 +47,6 @@ export const GroupDMItem = (props) => {
       <View style={styles.channelTitleContainer}>
         {showPrefix && (
           <SCText style={styles.groupDMMemberCountPrefix}>
-            {/* -1 to exclude yourself */}
             {memberCount - 1}
           </SCText>
         )}

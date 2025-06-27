@@ -224,8 +224,6 @@ const TabNavigation = () => (
     <Tab.Navigator tabBar={(props) => <BottomTabs {...props} />}>
       <Tab.Screen component={HomeStackNavigator} name='home' />
       <Tab.Screen component={DirectMessagesScreen} name={'dms'} />
-      {/* <Tab.Screen component={MentionsScreen} name={'mentions'} /> */}
-      {/* <Tab.Screen component={MessageSearchScreen} name={'search'} /> */}
       <Tab.Screen component={ProfileScreen} name={'you'} />
     </Tab.Navigator>
   </BottomSheetModalProvider>
