@@ -126,7 +126,6 @@ export const MessageActionSheet = React.forwardRef((props, fRef) => {
   const renderBackdrop = useCallback((props) => {
     const opacityStyle = useAnimatedStyle(
       () => ({
-        // 896 - max height of bottom sheet
         opacity: (800 - props.animatedPosition.value) / 896,
       }),
       [],

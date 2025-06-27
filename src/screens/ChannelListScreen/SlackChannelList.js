@@ -57,10 +57,6 @@ export const SlackChannelList = () => {
     });
   };
 
-  // const goToDraftScreen = () => {
-  //   navigation.navigate('DraftsScreen');
-  // };
-
   const goToChannelSearchScreen = () => {
     navigation.navigate('Modals', {
       params: {
@@ -139,20 +135,7 @@ export const SlackChannelList = () => {
         renderSectionHeader={renderSectionHeader}
         sections={[
           {
-            data: [
-              // {
-              //   handler: notImplemented,
-              //   icon: <SVGIcon height='14' type='threads' width='14' />,
-              //   id: 'threads',
-              //   title: 'Threads',
-              // },
-              // {
-              //   handler: goToDraftScreen,
-              //   icon: <SVGIcon height='14' type='drafts' width='14' />,
-              //   id: 'drafts',
-              //   title: 'Drafts',
-              // },
-            ],
+            data: [],
             id: 'menu',
             title: '',
           },

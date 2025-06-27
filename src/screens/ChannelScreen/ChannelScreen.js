@@ -36,7 +36,6 @@ import { ReactionPickerActionSheet } from '../../components/ReactionPickerAction
 import { RenderNothing } from '../../components/RenderNothing';
 import { UrlPreview } from '../../components/UrlPreview';
 import { SlackAppContext } from '../../contexts/SlackAppContext';
-import { useDraftMessage } from '../../hooks/useDraftMessage';
 import { ChatClientStore } from '../../utils/ChatClientStore';
 import { supportedReactions } from '../../utils/supportedReactions';
 import { ChannelHeader } from './ChannelHeader';
@@ -115,12 +114,9 @@ export const ChannelScreen = () => {
   const messageListRef = useRef(null);
 
   const [activeThread, setActiveThread] = useState();
-  const [draftText, setDraftText] = useState('');
   const [isReady, setIsReady] = useState(false);
   const [text, setText] = useState('');
   const [actionSheetData, setActionSheetData] = useState(null);
-
-  const { getDraftMessageText } = useDraftMessage(text, channel);
 
   const additionalTextInputProps = useMemo(
     () => ({
@@ -133,12 +129,6 @@ export const ChannelScreen = () => {
     [channel?.id, messageId],
   );
 
-  /**
-   * When `openReactionPicker` is called from MessageFooter,
-   * it will give you access to corresponding message.
-   *
-   * @param {function} toggleReactionHandler
-   */
   const openReactionPicker = (message) => {
     setActiveMessage(message);
     actionSheetRef.current?.dismiss();
@@ -149,9 +139,6 @@ export const ChannelScreen = () => {
     setText(text);
   };
 
-  /**
-   * Open slack type actionsheet on long press.
-   */
   const onLongPressMessage = ({ actionHandlers, message }) => {
     setActiveMessage(message);
     setActionSheetData({
@@ -161,11 +148,6 @@ export const ChannelScreen = () => {
     actionSheetRef.current?.present();
   };
 
-  /**
-   * Switch to ThreadScreen.
-   *
-   * @param thread {object} Message object corresponding to thread.
-   */
   const openThread = useCallback(
     (thread) => {
       setActiveThread(thread);
@@ -177,13 +159,6 @@ export const ChannelScreen = () => {
     [channel?.id, messageId],
   );
 
-  /**
-   * Jump to given message. The target message could be part of current channel
-   * or a different channel. If it's a different channel, then switch to that
-   * channel.
-   *
-   * @param {*} targetMessage
-   */
   const goToMessage = (targetMessage) => {
     if (channel.cid !== targetMessage.cid) {
       navigation.setParams({
@@ -243,15 +218,6 @@ export const ChannelScreen = () => {
       }
 
       setActiveChannel(newChannel);
-      const draft = await getDraftMessageText(channelId);
-
-      if (!draft) {
-        setIsReady(true);
-        return;
-      }
-
-      setDraftText(draft);
-      setText(draft);
       setIsReady(true);
     };
     setIsReady(false);
@@ -291,7 +257,6 @@ export const ChannelScreen = () => {
             DateHeader={RenderNothing}
             forceAlignMessages={'left'}
             Gallery={Gallery}
-            initialValue={draftText}
             InlineDateSeparator={InlineDateSeparator}
             InlineUnreadIndicator={InlineUnreadIndicator}
             Input={InputBox}
