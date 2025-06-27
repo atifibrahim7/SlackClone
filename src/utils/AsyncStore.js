@@ -21,12 +21,6 @@ export default {
   },
 };
 
-// Simple key functions (no user dependency)
-export const getChannelDraftKey = (channelId) =>
-  `@slack-clone-draft-${channelId}`;
-
-export const getUserDraftKey = () => `@slack-clone-draft-user`;
-
 export const getRecentSearchesKey = () => `@slack-clone-recent-searches`;
 
 // Simple authentication storage

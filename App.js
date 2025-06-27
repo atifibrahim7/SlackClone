@@ -27,7 +27,6 @@ import { ChannelScreen } from './src/screens/ChannelScreen/ChannelScreen';
 import { ChannelSearchScreen } from './src/screens/ChannelSearchScreen/ChannelSearchScreen';
 import { JumpToSearchScreen } from './src/screens/ChannelSearchScreen/JumpToSearchScreen';
 import { DirectMessagesScreen } from './src/screens/DirectMessagesScreen';
-import { DraftsScreen } from './src/screens/DraftsScreen';
 import { MentionsScreen } from './src/screens/MentionsScreen/MentionsScreen';
 import { MessageSearchScreen } from './src/screens/MessageSearchScreen/MessageSearchScreen';
 import { NewMessageScreen } from './src/screens/NewMessageScreen/NewMessageScreen';
@@ -218,11 +217,6 @@ const HomeStackNavigator = () => (
       name='ChannelScreen'
       options={{ headerShown: false }}
     />
-    {/* <HomeStack.Screen
-      component={DraftsScreen}
-      name='DraftsScreen'
-      options={{ headerShown: false }}
-    /> */}
     <HomeStack.Screen
       component={ThreadScreen}
       name='ThreadScreen'

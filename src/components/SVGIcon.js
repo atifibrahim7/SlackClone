@@ -3,7 +3,6 @@
 import { useTheme } from '@react-navigation/native';
 import React from 'react';
 
-import DraftsIcon from '../images/svgs/channel-list/drafts.svg';
 import NewMessageBubbleIcon from '../images/svgs/channel-list/new-message.svg';
 import ThreadsIcon from '../images/svgs/channel-list/threads.svg';
 import FileAttachmentIcon from '../images/svgs/channel/attachment.svg';
@@ -71,7 +70,6 @@ const iconMap = {
   emoji: EmojiIcon,
 
   // Channel list icons
-  drafts: DraftsIcon,
   threads: ThreadsIcon,
   'new-message': NewMessageBubbleIcon,
 

@@ -42,14 +42,7 @@ export const BottomTabs = ({ navigation, state }) => {
           iconActive: <SVGIcon height={25} type='dm-tab-active' width={25} />,
           title: 'DMs',
         };
-      // case 'mentions':
-      //   return {
-      //     icon: <SVGIcon height={25} type='mentions-tab' width={25} />,
-      //     iconActive: (
-      //       <SVGIcon height={25} type='mentions-tab-active' width={25} />
-      //     ),
-      //     title: 'Mention',
-      //   };
+      
       case 'search':
         return {
           icon: <SVGIcon height={25} type='search-tab' width={25} />,
@@ -67,9 +60,7 @@ export const BottomTabs = ({ navigation, state }) => {
     }
   };
 
-  /**
-   * TODO: For some reason bottom tabs show above the keyboard
-   */
+ 
   if (Platform.OS === 'android' && isOpen) {
     return null;
   }
