@@ -395,18 +395,6 @@ App
 - **Pagination**: Efficient data loading
 - **Background Sync**: Offline message handling
 
-## 🧪 Testing Strategy
-
-### Test Setup
-```json
-{
-  "test_framework": "Jest",
-  "test_utilities": {
-    "react-test-renderer": "Component testing",
-    "stream-chat-test-data-cli": "Stream Chat test data"
-  }
-}
-```
 
 
 ## 📚 API Documentation
@@ -455,25 +443,12 @@ The application leverages Stream Chat's comprehensive API:
 4. Update documentation for new features
 5. Follow Stream Chat integration patterns
 
-### Code Style
-- ESLint configuration for code quality
-- Prettier for consistent formatting
-- Conventional commits for clear history
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support & Documentation
 
-### Stream Chat Resources
-- [Stream Chat React Native SDK Documentation](https://getstream.io/chat/docs/react-native/)
-- [Stream Chat API Reference](https://getstream.io/chat/docs/rest/)
-- [React Native Guide](https://reactnative.dev/docs/getting-started)
-
-### Community
-- [Stream Chat Community](https://getstream.io/chat/docs/react-native/community/)
-- [React Native Community](https://github.com/react-native-community)
 
 ---
 
