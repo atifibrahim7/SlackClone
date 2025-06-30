@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Channel, MessageInput, MessageList } from 'stream-chat-react-native';
 
 import { CustomKeyboardCompatibleView } from '../../components/CustomKeyboardCompatibleView';
-import { InputBox } from '../../components/Input/InputBox';
+import { InputBox } from '../../components/InputBox/InputBox';
 import { MessageAvatar } from '../../components/MessageAvatar';
 import { MessageFooter } from '../../components/MessageFooter';
 import { MessageHeader } from '../../components/MessageHeader';
@@ -83,7 +83,6 @@ export const NewMessageScreen = () => {
     return res;
   };
 
- 
   const onUsersChange = (updatedUsers) => {
     selectedUsers.current = updatedUsers;
   };

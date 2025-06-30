@@ -19,9 +19,9 @@ import { useMessageInputContext } from 'stream-chat-react-native';
 import { useKeyboard } from '../../hooks/useKeaboard';
 import { notImplemented } from '../../utils';
 import { getChannelDisplayName } from '../../utils/channelUtils';
-import { SCText } from './../SCText';
-import { SVGIcon } from './../SVGIcon';
-import { SendButton } from './../SendButton';
+import { SCText } from '../SCText';
+import { SVGIcon } from '../SVGIcon';
+import { SendButton } from '../SendButton';
 
 const styles = StyleSheet.create({
   actionButton: {
@@ -253,7 +253,7 @@ export const InputBoxThread = () => {
                       width='18'
                     />
                   </TouchableOpacity>
-                 
+
                   <TouchableOpacity
                     onPress={notImplemented}
                     style={styles.actionButton}>

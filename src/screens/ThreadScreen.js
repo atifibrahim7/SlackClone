@@ -13,15 +13,15 @@ import { Channel, Thread } from 'stream-chat-react-native';
 
 import { CustomKeyboardCompatibleView } from '../components/CustomKeyboardCompatibleView';
 import { Gallery } from '../components/Gallery';
-import { InputBoxThread } from '../components/Input/InputBoxThread';
-import { MessageActionSheet } from '../components/MessageActionSheet/MessageActionSheet';
+import { InputBoxThread } from '../components/InputBox/InputBoxThread';
+import { MessageActionSheet } from '../components/MessageAction/MessageActionSheet';
 import { MessageAvatar } from '../components/MessageAvatar';
 import { MessageFooter } from '../components/MessageFooter';
 import { MessageHeader } from '../components/MessageHeader';
 import { MessageRepliesAvatars } from '../components/MessageRepliesAvatars';
 import { MessageText } from '../components/MessageText';
 import { ModalScreenHeader } from '../components/ModalScreenHeader';
-import { ReactionPickerActionSheet } from '../components/ReactionPickerActionSheet/ReactionPickerActionSheet';
+import { ReactionPickerActionSheet } from '../components/PickReaction/ReactionPickerActionSheet';
 import { RenderNothing } from '../components/RenderNothing';
 import { UrlPreview } from '../components/UrlPreview';
 import { SlackAppContext } from '../contexts/SlackAppContext';

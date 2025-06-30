@@ -25,14 +25,14 @@ import { CustomKeyboardCompatibleView } from '../../components/CustomKeyboardCom
 import { Gallery } from '../../components/Gallery';
 import { InlineDateSeparator } from '../../components/InlineDateSeparator';
 import { InlineUnreadIndicator } from '../../components/InlineUnreadIndicator';
-import { InputBox } from '../../components/Input/InputBox';
-import { MessageActionSheet } from '../../components/MessageActionSheet/MessageActionSheet';
+import { InputBox } from '../../components/InputBox/InputBox';
+import { MessageActionSheet } from '../../components/MessageAction/MessageActionSheet';
 import { MessageAvatar } from '../../components/MessageAvatar';
 import { MessageFooter } from '../../components/MessageFooter';
 import { MessageHeader } from '../../components/MessageHeader';
 import { MessageRepliesAvatars } from '../../components/MessageRepliesAvatars';
 import { MessageText } from '../../components/MessageText';
-import { ReactionPickerActionSheet } from '../../components/ReactionPickerActionSheet/ReactionPickerActionSheet';
+import { ReactionPickerActionSheet } from '../../components/PickReaction/ReactionPickerActionSheet';
 import { RenderNothing } from '../../components/RenderNothing';
 import { UrlPreview } from '../../components/UrlPreview';
 import { SlackAppContext } from '../../contexts/SlackAppContext';
@@ -176,7 +176,6 @@ export const ChannelScreen = () => {
 
     try {
       if (messageListRef.current) {
-      
         messageListRef.current.scrollToIndex({
           index: messages.length - indexOfParentInMessageList - 1,
           viewPosition: 0.5,
