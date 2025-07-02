@@ -3,30 +3,30 @@
 
 A feature-rich Slack-inspired chat application built with React Native and powered by Stream Chat API. This project demonstrates modern React Native development practices, real-time messaging capabilities, and seamless integration with Stream's chat infrastructure.
 
-## 🚀 Project Overview
+##  Project Overview
 
 This Slack Clone is a comprehensive messaging application that replicates core Slack functionalities including real-time messaging, channel management, direct messages, threading, reactions, and more. Built with React Native for cross-platform compatibility and Stream Chat for robust messaging infrastructure.
 
-### 🏗️ Architecture
+###  Architecture
 
 ```
 SlackClone/
-├── 📱 React Native Frontend (iOS/Android)
-├── 🌐 Node.js Backend (Express + Stream Chat)
-├── ☁️ Stream Chat API Integration
-├── 📦 Fastlane CI/CD Pipeline
-└── 🔧 Development Tools & Configuration
+├──  React Native Frontend (iOS/Android)
+├──  Node.js Backend (Express + Stream Chat)
+├──  Stream Chat API Integration
+├──  Fastlane CI/CD Pipeline
+└──  Development Tools & Configuration
 ```
 
-## ✨ Key Features
+##  Key Features
 
-### 🔐 Authentication & User Management
+###  Authentication & User Management
 - **Simple Authentication System**: Custom login with Stream Chat integration
 - **Persistent Login**: Auto-login with stored credentials
 - **User Profile Management**: Profile pictures, status, and user data
 - **Secure Token Management**: JWT-based authentication with Stream Chat
 
-### 💬 Messaging Features
+###  Messaging Features
 - **Real-time Messaging**: Instant message delivery and updates
 - **Channel Management**: Create, join, and manage channels
 - **Direct Messages**: One-on-one private conversations
@@ -39,7 +39,7 @@ SlackClone/
 - **Read Receipts**: Track message read status
 - **Message Actions**: Edit, delete, and react to messages
 
-### 🎨 User Interface
+###  User Interface
 - **Slack-inspired Design**: Familiar and intuitive interface
 - **Dark/Light Theme Support**: Automatic theme switching
 - **Custom Components**: Reusable UI components for consistency
@@ -48,7 +48,7 @@ SlackClone/
 - **Modal Screens**: Clean presentation of detailed views
 - **Smooth Animations**: React Native Reanimated for fluid UX
 
-### 🔍 Advanced Features
+###  Advanced Features
 - **Message Search**: Full-text search across conversations
 - **Channel Search**: Find and join new channels
 - **User Search**: Discover and connect with team members
@@ -58,7 +58,7 @@ SlackClone/
 - **Custom Keyboards**: Enhanced input experience
 - **Image Gallery**: View and share images seamlessly
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend (React Native)
 ```json
@@ -105,7 +105,7 @@ SlackClone/
 }
 ```
 
-## 🌊 Stream Chat Integration
+##  Stream Chat Integration
 
 ### Stream App Configuration
 - 
@@ -205,7 +205,7 @@ sequenceDiagram
     App->>Stream: Connect with token
 ```
 
-## 🚀 Deployment & CI/CD
+##  Deployment & CI/CD
 
 ### Fastlane Configuration
 The project includes a comprehensive Fastlane setup for automated deployments:
@@ -236,7 +236,7 @@ fastlane match_me
 - **Port**: 3001 (configurable via environment)
 - **Health Monitoring**: Built-in health check endpoints
 
-## 📱 Development Setup
+##  Development Setup
 
 ### Prerequisites
 - Node.js (v14+)
@@ -301,7 +301,7 @@ yarn android  # for Android
 - **React DevTools**: Component debugging
 - **Stream Chat CLI**: Stream Chat development tools
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ### Frontend Architecture
 ```
@@ -347,7 +347,7 @@ App
 └── OverlayProvider (Stream Chat)
 ```
 
-## 🎨 UI/UX Design
+##  UI/UX Design
 
 ### Theme System
 - **Light Theme**: Clean, professional appearance
@@ -368,7 +368,7 @@ App
 - **Reaction Picker**: Emoji selection interface
 - **Thread View**: Nested conversation display
 
-## 🔒 Security Features
+##  Security Features
 
 ### Authentication Security
 - **JWT Tokens**: Secure authentication with Stream Chat
@@ -381,7 +381,7 @@ App
 - **Rate Limiting**: Protection against abuse
 - **Environment Variables**: Secure API key management
 
-## 📊 Performance Optimizations
+##  Performance Optimizations
 
 ### React Native Optimizations
 - **FlatList Optimization**: Efficient list rendering
@@ -397,7 +397,7 @@ App
 
 
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Stream Chat API Integration
 The application leverages Stream Chat's comprehensive API:
@@ -414,7 +414,7 @@ The application leverages Stream Chat's comprehensive API:
 - **Token Management**: Secure token generation
 - **Health Monitoring**: System status checks
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 ### Planned Features
 1. **Voice Messages**: Audio message recording and playback
@@ -434,7 +434,7 @@ The application leverages Stream Chat's comprehensive API:
 5. **Automated Testing**: Comprehensive test coverage
 6. **Documentation**: Interactive API documentation
 
-## 🤝 Contributing
+##  Contributing
 
 ### Development Guidelines
 1. Follow React Native best practices
@@ -444,7 +444,7 @@ The application leverages Stream Chat's comprehensive API:
 5. Follow Stream Chat integration patterns
 
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -452,6 +452,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Built with ❤️ using React Native and Stream Chat**
 
-*This Slack Clone demonstrates the power of modern React Native development combined with Stream Chat's robust messaging infrastructure, creating a production-ready chat application with enterprise-grade features.*
